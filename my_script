@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "your name:" $name
+echo "age is:" $age
+echo "country:" $country
