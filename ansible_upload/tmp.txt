@@ -1,0 +1,1548 @@
+Binary file ./.git/objects/pack/pack-48e5c6267c5551f32025bc767a0b09875bd359cc.pack matches
+Binary file ./.git/index matches
+./.github/BOTMETA.yml:  $modules/utilities/logic/async_status.py: $team_ansible
+./.github/BOTMETA.yml:  $modules/utilities/logic/async_wrapper.py: $team_ansible
+./.github/BOTMETA.yml:  $modules/windows/async_status.ps1: $team_windows
+./.github/BOTMETA.yml:  $modules/windows/async_wrapper.ps1: $team_windows
+./docs/docsite/_static/jquery.js:(function(A,w){function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j);return a}return i?
+./docs/docsite/_static/jquery.js:global:true,type:"GET",contentType:"application/x-www-form-urlencoded",processData:true,async:true,xhr:A.XMLHttpRequest&&(A.location.protocol!=="file:"||!A.ActiveXObject)?function(){return new A.XMLHttpRequest}:function(){try{return new A.ActiveXObject("Microsoft.XMLHTTP")}catch(a){}},accepts:{xml:"application/xml, text/xml",html:"text/html",script:"text/javascript, application/javascript",json:"application/json, text/javascript",text:"text/plain",_default:"*/*"}},lastModified:{},etag:{},ajax:function(a){function b(){e.success&&
+./docs/docsite/_static/jquery.js:false;C.onload=C.onreadystatechange=function(){if(!B&&(!this.readyState||this.readyState==="loaded"||this.readyState==="complete")){B=true;b();d();C.onload=C.onreadystatechange=null;z&&C.parentNode&&z.removeChild(C)}}}z.insertBefore(C,z.firstChild);return w}var E=false,x=e.xhr();if(x){e.username?x.open(n,e.url,e.async,e.username,e.password):x.open(n,e.url,e.async);try{if(e.data||a&&a.contentType)x.setRequestHeader("Content-Type",e.contentType);if(e.ifModified){c.lastModified[e.url]&&x.setRequestHeader("If-Modified-Since",
+./docs/docsite/_static/jquery.js:d();E=true;if(x)x.onreadystatechange=c.noop}else if(!E&&x&&(x.readyState===4||q==="timeout")){E=true;x.onreadystatechange=c.noop;i=q==="timeout"?"timeout":!c.httpSuccess(x)?"error":e.ifModified&&c.httpNotModified(x,e.url)?"notmodified":"success";var p;if(i==="success")try{o=c.httpData(x,e.dataType,e)}catch(v){i="parsererror";p=v}if(i==="success"||i==="notmodified")j||b();else c.handleError(e,x,i,p);d();q==="timeout"&&x.abort();if(e.async)x=null}};try{var h=x.abort;x.abort=function(){x&&h.call(x);
+./docs/docsite/_static/jquery.js:g("abort")}}catch(l){}e.async&&e.timeout>0&&setTimeout(function(){x&&!E&&g("timeout")},e.timeout);try{x.send(n==="POST"||n==="PUT"||n==="DELETE"?e.data:null)}catch(m){c.handleError(e,x,null,m);d()}e.async||g();return x}},handleError:function(a,b,d,f){if(a.error)a.error.call(a.context||a,b,d,f);if(a.global)(a.context?c(a.context):c.event).trigger("ajaxError",[b,a,f])},active:0,httpSuccess:function(a){try{return!a.status&&location.protocol==="file:"||a.status>=200&&a.status<300||a.status===304||a.status===
+./docs/docsite/rst/dev_guide/style_guide/_themes/srtd/layout.html:  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSB293');</script>
+./docs/docsite/rst/dev_guide/style_guide/_themes/srtd/searchbox.html:    gcse.async = true;
+./docs/docsite/rst/dev_guide/developing_api.rst:If you are looking to use Ansible programmatically from something other than Python, trigger events asynchronously, 
+./docs/docsite/rst/dev_guide/developing_program_flow_modules.rst:    When :term:`tasks <tasks>` are run with the ``async:`` parameter, Ansible
+./docs/docsite/rst/dev_guide/developing_program_flow_modules.rst:    uses the ``async`` Action Plugin instead of the ``normal`` Action Plugin
+./docs/docsite/rst/community.rst:to get the attention of core developers since it's asynchronous.
+./docs/docsite/rst/glossary.rst:        task in async mode.  Async modes can poll for completion every so many
+./docs/docsite/rst/intro_adhoc.rst:asynchronously in the background, with a timeout of 3600 seconds (``-B``), 
+./docs/docsite/rst/intro_adhoc.rst:async_status module, passing it the job id that was returned when you ran
+./docs/docsite/rst/intro_adhoc.rst:    $ ansible web1.example.com -m async_status -a "jid=488359678239.2844"
+./docs/docsite/rst/intro_configuration.rst:For asynchronous tasks in Ansible (covered in :doc:`playbooks_async`), this is how often to check back on the status of those
+./docs/docsite/rst/intro_windows.rst:* async_status
+./docs/docsite/rst/playbooks_async.rst:You will also want to use asynchronous mode on very long running
+./docs/docsite/rst/playbooks_async.rst:To launch a task asynchronously, specify its maximum runtime
+./docs/docsite/rst/playbooks_async.rst:        async: 45
+./docs/docsite/rst/playbooks_async.rst:   There is no default for the async time limit.  If you leave off the
+./docs/docsite/rst/playbooks_async.rst:   'async' keyword, the task runs synchronously, which is Ansible's
+./docs/docsite/rst/playbooks_async.rst:        async: 45
+./docs/docsite/rst/playbooks_async.rst:   Using a higher value for ``--forks`` will result in kicking off asynchronous
+./docs/docsite/rst/playbooks_async.rst:        async: 1000
+./docs/docsite/rst/playbooks_async.rst:        async_status: jid={{ yum_sleeper.ansible_job_id }}
+./docs/docsite/rst/playbooks_async.rst:   If the value of ``async:`` is not high enough, this will cause the 
+./docs/docsite/rst/playbooks_async.rst:   the ``async_status:`` is looking for will not have been written or no longer exist 
+./docs/docsite/rst/playbooks_async.rst:If you would like to run multiple asynchronous tasks while limiting the amount
+./docs/docsite/rst/playbooks_async.rst:    - name: Run items asynchronously in batch of two items
+./docs/docsite/rst/playbooks_async.rst:      command: sleep {{ async_item }}
+./docs/docsite/rst/playbooks_async.rst:      async: 45
+./docs/docsite/rst/playbooks_async.rst:        loop_var: "async_item"
+./docs/docsite/rst/playbooks_async.rst:      register: async_results
+./docs/docsite/rst/playbooks_async.rst:      async_status:
+./docs/docsite/rst/playbooks_async.rst:        jid: "{{ async_result_item.ansible_job_id }}"
+./docs/docsite/rst/playbooks_async.rst:      with_items: "{{ async_results.results }}"
+./docs/docsite/rst/playbooks_async.rst:        loop_var: "async_result_item"
+./docs/docsite/rst/playbooks_async.rst:      register: async_poll_results
+./docs/docsite/rst/playbooks_async.rst:      until: async_poll_results.finished
+./docs/docsite/rst/playbooks_intro.rst:synchronously or asynchronously.
+./docs/docsite/rst/playbooks_special_topics.rst:   playbooks_async
+./docs/docsite/rst/porting_guide_2.3.rst:Restructued async to work with action plugins
+./docs/docsite/rst/porting_guide_2.3.rst:In Ansible 2.2 (and possibly earlier) the `async:` keyword could not be used in conjunction with the action plugins such as `service`. This limitation has been removed in Ansible 2.3
+./docs/docsite/rst/porting_guide_2.3.rst:    - name: Install nginx asynchronously
+./docs/docsite/rst/porting_guide_2.3.rst:      async: 45
+./docs/docsite/_themes/srtd/footer.html:  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+./docs/docsite/_themes/srtd/layout.html:  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSB293');</script>
+./docs/docsite/keyword_desc.yml:async: Run a task asyncronouslly if the C(action) supports this.
+./docs/docsite/keyword_desc.yml:poll: Sets the polling interval in seconds for async tasks (default 10s).
+./hacking/metadata-tool.py:NONMODULE_PY_FILES = frozenset(('async_wrapper.py',))
+./hacking/report.py:                if module == 'async_wrapper':
+./lib/ansible/cli/__init__.py:                    async_opts=False, connect_opts=False, subset_opts=False, check_opts=False, inventory_opts=False, epilog=None, fork_opts=False,
+./lib/ansible/cli/__init__.py:        if async_opts:
+./lib/ansible/cli/__init__.py:                              help='run asynchronously, failing after X seconds (default=N/A)')
+./lib/ansible/cli/adhoc.py:            async_opts=True,
+./lib/ansible/cli/adhoc.py:    def _play_ds(self, pattern, async, poll):
+./lib/ansible/cli/adhoc.py:            tasks=[dict(action=dict(module=self.options.module_name, args=parse_kv(self.options.module_args, check_raw=check_raw)), async=async, poll=poll)]
+./lib/ansible/config/base.yml:    - For asynchronous tasks in Ansible (covered in Asynchronous Actions and Polling),
+./lib/ansible/executor/module_common.py:from ansible.plugins.shell.powershell import async_watchdog, async_wrapper, become_wrapper, leaf_exec, exec_wrapper
+./lib/ansible/executor/module_common.py:        # remote_tmpdir and this module executing under async.  So we cannot
+./lib/ansible/executor/module_common.py:def _find_module_utils(module_name, b_module_data, module_path, module_args, task_vars, module_compression, async_timeout, become,
+./lib/ansible/executor/module_common.py:        if async_timeout > 0:
+./lib/ansible/executor/module_common.py:            exec_manifest["actions"].insert(0, 'async_watchdog')
+./lib/ansible/executor/module_common.py:            exec_manifest["async_watchdog"] = to_text(base64.b64encode(to_bytes(async_watchdog)))
+./lib/ansible/executor/module_common.py:            exec_manifest["actions"].insert(0, 'async_wrapper')
+./lib/ansible/executor/module_common.py:            exec_manifest["async_wrapper"] = to_text(base64.b64encode(to_bytes(async_wrapper)))
+./lib/ansible/executor/module_common.py:            exec_manifest["async_jid"] = str(random.randint(0, 999999999999))
+./lib/ansible/executor/module_common.py:            exec_manifest["async_timeout_sec"] = async_timeout
+./lib/ansible/executor/module_common.py:def modify_module(module_name, module_path, module_args, task_vars=dict(), module_compression='ZIP_STORED', async_timeout=0, become=False,
+./lib/ansible/executor/module_common.py:                                                                async_timeout=async_timeout, become=become, become_method=become_method,
+./lib/ansible/executor/task_executor.py:            if self._task.async > 0:
+./lib/ansible/executor/task_executor.py:                    result = self._poll_async_result(result=result, templar=templar, task_vars=vars_copy)
+./lib/ansible/executor/task_executor.py:                    # FIXME callback 'v2_runner_on_async_poll' here
+./lib/ansible/executor/task_executor.py:    def _poll_async_result(self, result, templar, task_vars=None):
+./lib/ansible/executor/task_executor.py:        async_jid = result.get('ansible_job_id')
+./lib/ansible/executor/task_executor.py:        if async_jid is None:
+./lib/ansible/executor/task_executor.py:            return dict(failed=True, msg="No job id was returned by the async task")
+./lib/ansible/executor/task_executor.py:        # Create a new pseudo-task to run the async_status module, and run
+./lib/ansible/executor/task_executor.py:        # async time limit is exceeded.
+./lib/ansible/executor/task_executor.py:        async_task = Task().load(dict(action='async_status jid=%s' % async_jid))
+./lib/ansible/executor/task_executor.py:        # Because this is an async task, the action handler is async. However,
+./lib/ansible/executor/task_executor.py:            task=async_task,
+./lib/ansible/executor/task_executor.py:        time_left = self._task.async
+./lib/ansible/executor/task_executor.py:                async_result = normal_handler.run(task_vars=task_vars)
+./lib/ansible/executor/task_executor.py:                # is associated with a parsing error. The async_runner can
+./lib/ansible/executor/task_executor.py:                if (int(async_result.get('finished', 0)) == 1 or
+./lib/ansible/executor/task_executor.py:                        ('failed' in async_result and async_result.get('_ansible_parsed', False)) or
+./lib/ansible/executor/task_executor.py:                        'skipped' in async_result):
+./lib/ansible/executor/task_executor.py:                display.vvvv("Exception during async poll, retrying... (%s)" % to_text(e))
+./lib/ansible/executor/task_executor.py:        if int(async_result.get('finished', 0)) != 1:
+./lib/ansible/executor/task_executor.py:            if async_result.get('_ansible_parsed'):
+./lib/ansible/executor/task_executor.py:                return dict(failed=True, msg="async task did not complete within the requested time")
+./lib/ansible/executor/task_executor.py:                return dict(failed=True, msg="async task produced unparseable results", async_result=async_result)
+./lib/ansible/executor/task_executor.py:            return async_result
+./lib/ansible/module_utils/json_utils.py:# NB: a copy of this function exists in ../../modules/core/async_wrapper.py. Ensure any
+./lib/ansible/module_utils/lxd.py:        if resp_json['type'] == 'async':
+./lib/ansible/modules/packaging/os/pulp_repo.py:        This is asynchronous but not delayed like a scheduled sync. A state of
+./lib/ansible/modules/packaging/os/pulp_repo.py:      - Wait for asynchronous tasks to complete before returning.
+./lib/ansible/modules/packaging/os/pulp_repo.py:                        msg="Failed to check async task status.",
+./lib/ansible/modules/packaging/os/yum_repository.py:  async:
+./lib/ansible/modules/packaging/os/yum_repository.py:        'async',
+./lib/ansible/modules/packaging/os/yum_repository.py:            async=dict(type='bool'),
+./lib/ansible/modules/utilities/helper/_accelerate.py:# NOTE: this shares a fair amount of code in common with async_wrapper, if async_wrapper were a new module we could move
+./lib/ansible/modules/utilities/logic/async_status.py:module: async_status
+./lib/ansible/modules/utilities/logic/async_status.py:short_description: Obtain status of asynchronous task
+./lib/ansible/modules/utilities/logic/async_status.py:     - This module gets the status of an asynchronous task.
+./lib/ansible/modules/utilities/logic/async_status.py:      - if C(status), obtain the status; if C(cleanup), clean up the async job cache
+./lib/ansible/modules/utilities/logic/async_status.py:        located in C(~/.ansible_async/) for the specified job I(jid).
+./lib/ansible/modules/utilities/logic/async_status.py:    - See also U(http://docs.ansible.com/playbooks_async.html)
+./lib/ansible/modules/utilities/logic/async_status.py:    logdir = os.path.expanduser("~/.ansible_async")
+./lib/ansible/modules/utilities/logic/async_wrapper.py:    # decouple from parent environment (does not chdir / to keep the directory context the same as for non async tasks)
+./lib/ansible/modules/utilities/logic/async_wrapper.py:            "msg": "usage: async_wrapper <jid> <time_limit> <modulescript> <argsfile> [-preserve_tmp]  "
+./lib/ansible/modules/utilities/logic/async_wrapper.py:    jobdir = os.path.expanduser("~/.ansible_async")
+./lib/ansible/modules/utilities/logic/async_wrapper.py:            # Notify the overlord that the async process started
+./lib/ansible/modules/utilities/logic/async_wrapper.py:            notice("Return async_wrapper task started.")
+./lib/ansible/modules/utilities/logic/pause.py:  - The pause module integrates into async/parallelized playbooks without any special considerations (see Rolling Updates).
+./lib/ansible/modules/cloud/amazon/ec2_snapshot_facts.py:    description: Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails (for example, if the proper
+./lib/ansible/modules/cloud/amazon/execute_lambda.py:  - This module executes AWS Lambda functions, allowing synchronous and asynchronous
+./lib/ansible/modules/cloud/amazon/execute_lambda.py:    description: C(StatusCode) of API call exit (200 for synchronous invokes, 202 for async)
+./lib/ansible/modules/cloud/azure/_azure.py:    raise AzureException('Timed out waiting for async operation ' + msg + ' "' + str(promise.request_id) + '" to complete.')
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:            if self.module.params.get('poll_async'):
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:                if self.module.params.get('poll_async'):
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:            if self.module.params.get('poll_async'):
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                if network and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                if network and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                if project and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:            if project and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                if project and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:      - "Poll async jobs until job has finished."
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/google/gce_labels.py:    # method to poll for the async request/operation to complete before
+./lib/ansible/modules/cloud/profitbricks/profitbricks.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_datacenter.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_nic.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_volume.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_volume_attachments.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/database/misc/riak.py:# Wait for handoffs to finish.  Use with async and poll.
+./lib/ansible/modules/database/misc/riak.py:# this could take a while, recommend to run in async mode
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:    async_ssl:
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:    async_ssl_threads:
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:            - Number of async ssl threads per se_dp.
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:        async_ssl=dict(type='bool',),
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:        async_ssl_threads=dict(type='int',),
+./lib/ansible/modules/network/radware/vdirect_file.py:     - Wait for async operation to complete, may be set as VDIRECT_WAIT environment variable.
+./lib/ansible/modules/network/radware/vdirect_file.py:     - Amount of time to wait for async operation completion [seconds],
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                'volume-destroy-async', **{'volume-name': self.name})
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                'volume-rename-async',
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                'volume-size-async',
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                    'volume-online-async',
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                    'volume-offline-async',
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            - The name of the async array you wish to target, or create.
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            - A C(state) of present will either create or update the async mirror group.
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            - A C(state) of absent will remove the async mirror group.
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    async_id = None
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors' % ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    for async_group in data:
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:        if async_group['label'] == desired_name:
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            api_data = async_group
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            async_id = async_group['groupRef']
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                syncIntervalMinutes=async_group['syncIntervalMinutes'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                syncWarnThresholdMinutes=async_group['syncCompletionTimeAlertThresholdMinutes'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                recoveryWarnThresholdMinutes=async_group['recoveryPointAgeAlertThresholdMinutes'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                repoUtilizationWarnThreshold=async_group['repositoryUtilizationWarnThreshold'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    return label_exists, matches_spec, api_data, async_id
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:def create_async(module, ssid, api_url, api_pwd, api_usr, body):
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors' % ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:def update_async(module, ssid, api_url, pwd, user, body, new_name, async_id):
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors/%s' % (ssid, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:        module.exit_json(msg="Exception while updating async mirror group. Message: %s" % to_native(e),
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:def remove_amg(module, ssid, api_url, pwd, user, async_id):
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors/%s' % (ssid, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:        module.exit_json(msg="Exception while removing async mirror group. Message: %s" % to_native(e),
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    name_exists, spec_matches, api_data, async_id = has_match(module, ssid, api_url, pwd, user, p)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            results = update_async(module, ssid, api_url, pwd, user,
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                                   p, new_name, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                             msg="Async mirror group updated", async_id=async_id,
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            results = create_async(module, ssid, api_url, user, pwd, p)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            remove_amg(module, ssid, api_url, pwd, user, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                             async_id=async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    - Update a storage array to become the primary or secondary instance in an asynchronous mirror group
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:            - The ID of the primary storage array for the async mirror action
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    get_amgs = 'storage-systems/%s/async-mirrors' % ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    endpoint = 'storage-systems/%s/async-mirrors/%s/role' % (ssid, amg_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    status_endpoint = 'storage-systems/%s/async-mirrors/%s' % (ssid, amg_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    agm_exists, has_desired_role, async_id, amg_data = has_match(module, ssid, api_url, pwd, user, p, name)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:        amg_data = update_amg(module, ssid, api_url, user, pwd, p, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:short_description: Conduct synchronization actions on asynchronous mirror groups.
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:    - Allows for the initialization, suspension and resumption of an asynchronous mirror group's synchronization for NetApp E-series storage arrays.
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:            - The name of the async mirror group you wish to target
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:    - name: start AMG async
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:        endpoint = self.url + '/storage-systems/%s/async-mirrors' % self.ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:                msg="There is no async mirror group  %s associated with storage array %s" % (self.name, self.ssid))
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:        endpoint = self.url + "/storage-systems/%s/async-mirrors/%s/%s" % (self.ssid, self.amg_id, suffix)
+./lib/ansible/modules/storage/zfs/zpool_facts.py:                "feature@async_destroy": "enabled",
+./lib/ansible/modules/windows/async_status.ps1:$log_path = [System.IO.Path]::Combine($env:LOCALAPPDATA, ".ansible_async", $jid)
+./lib/ansible/modules/windows/async_wrapper.ps1:                $job_asyncresult = $job.BeginInvoke()
+./lib/ansible/modules/windows/async_wrapper.ps1:                $signaled = $job_asyncresult.AsyncWaitHandle.WaitOne($max_exec_time_sec * 1000)
+./lib/ansible/modules/windows/async_wrapper.ps1:                If($job_asyncresult.IsCompleted) {
+./lib/ansible/modules/windows/async_wrapper.ps1:                    $job_output = $job.EndInvoke($job_asyncresult)
+./lib/ansible/modules/windows/async_wrapper.ps1:$results_path = [System.IO.Path]::Combine($env:LOCALAPPDATA, ".ansible_async", $local_jid)
+./lib/ansible/modules/windows/async_wrapper.ps1:    ansible_async_watchdog_pid=$watchdog_pid
+./lib/ansible/modules/windows/win_disk_image.ps1:        # the actual mount is async, so the CIMInstance result may not immediately contain the data we need
+./lib/ansible/modules/windows/win_domain_controller.py:# becomes invalid to fetch the final output over WinRM. This requires win_async
+./lib/ansible/modules/windows/win_toast.py:   - You must run this module with async, otherwise it will hang until the expire period has passed.
+./lib/ansible/modules/windows/win_toast.py:- name: Warn logged in users of impending upgrade (note use of async to stop the module from waiting until notification expires).
+./lib/ansible/modules/windows/win_toast.py:  async: 60
+./lib/ansible/parsing/vault/__init__.py:        due to wear leveling; for other storage systems, the async kernel->filesystem->disk calls never
+./lib/ansible/playbook/task.py:    _async = FieldAttribute(isa='int', default=0)
+./lib/ansible/plugins/action/__init__.py:        self._supports_async = False
+./lib/ansible/plugins/action/__init__.py:        if self._task.async and not self._supports_async:
+./lib/ansible/plugins/action/__init__.py:            raise AnsibleActionFail('async is not supported for this task.')
+./lib/ansible/plugins/action/__init__.py:        elif self._task.async and self._play_context.check_mode:
+./lib/ansible/plugins/action/__init__.py:            raise AnsibleActionFail('check mode and async cannot be used on same task.')
+./lib/ansible/plugins/action/__init__.py:                                                                    async_timeout=self._task.async, become=self._play_context.become,
+./lib/ansible/plugins/action/__init__.py:    def _is_pipelining_enabled(self, module_style, wrap_async=False):
+./lib/ansible/plugins/action/__init__.py:            not wrap_async,                            # async does not support pipelining
+./lib/ansible/plugins/action/__init__.py:                                      wrap_async=False)
+./lib/ansible/plugins/action/__init__.py:    def _execute_module(self, module_name=None, module_args=None, tmp=None, task_vars=None, persist_files=False, delete_remote_tmp=True, wrap_async=False):
+./lib/ansible/plugins/action/__init__.py:        if not self._is_pipelining_enabled(module_style, wrap_async):
+./lib/ansible/plugins/action/__init__.py:        if wrap_async:
+./lib/ansible/plugins/action/__init__.py:            # configure, upload, and chmod the async_wrapper module
+./lib/ansible/plugins/action/__init__.py:            (async_module_style, shebang, async_module_data, async_module_path) = self._configure_module(module_name='async_wrapper', module_args=dict(),
+./lib/ansible/plugins/action/__init__.py:            async_module_remote_filename = self._connection._shell.get_remote_filename(async_module_path)
+./lib/ansible/plugins/action/__init__.py:            remote_async_module_path = self._connection._shell.join_path(tmp, async_module_remote_filename)
+./lib/ansible/plugins/action/__init__.py:            self._transfer_data(remote_async_module_path, async_module_data)
+./lib/ansible/plugins/action/__init__.py:            remote_files.append(remote_async_module_path)
+./lib/ansible/plugins/action/__init__.py:            async_limit = self._task.async
+./lib/ansible/plugins/action/__init__.py:            async_jid = str(random.randint(0, 999999999999))
+./lib/ansible/plugins/action/__init__.py:            # call the interpreter for async_wrapper directly
+./lib/ansible/plugins/action/__init__.py:            # TODO: re-implement async_wrapper as a regular module to avoid this special case
+./lib/ansible/plugins/action/__init__.py:            async_cmd = [interpreter, remote_async_module_path, async_jid, async_limit, remote_module_path]
+./lib/ansible/plugins/action/__init__.py:                async_cmd.insert(0, environment_string)
+./lib/ansible/plugins/action/__init__.py:                async_cmd.append(args_file_path)
+./lib/ansible/plugins/action/__init__.py:                # maintain a fixed number of positional parameters for async_wrapper
+./lib/ansible/plugins/action/__init__.py:                async_cmd.append('_')
+./lib/ansible/plugins/action/__init__.py:                async_cmd.append("-preserve_tmp")
+./lib/ansible/plugins/action/__init__.py:            cmd = " ".join(to_text(x) for x in async_cmd)
+./lib/ansible/plugins/action/__init__.py:        tmpdir_delete = (not data.pop("_ansible_suppress_tmpdir_delete", False) and wrap_async)
+./lib/ansible/plugins/action/__init__.py:        if wrap_async:
+./lib/ansible/plugins/action/net_base.py:                          wrap_async=self._task.async))
+./lib/ansible/plugins/action/normal.py:        self._supports_async = True
+./lib/ansible/plugins/action/normal.py:            wrap_async = self._task.async and not self._connection.has_native_async
+./lib/ansible/plugins/action/normal.py:            results = merge_hash(results, self._execute_module(tmp=tmp, task_vars=task_vars, wrap_async=wrap_async))
+./lib/ansible/plugins/action/package.py:        self._supports_async = True
+./lib/ansible/plugins/action/package.py:                result.update(self._execute_module(module_name=module, module_args=new_module_args, task_vars=task_vars, wrap_async=self._task.async))
+./lib/ansible/plugins/action/service.py:        self._supports_async = True
+./lib/ansible/plugins/action/service.py:            result.update(self._execute_module(module_name=module, module_args=new_module_args, task_vars=task_vars, wrap_async=self._task.async))
+./lib/ansible/plugins/action/win_reboot.py:        self._supports_async = True
+./lib/ansible/plugins/callback/__init__.py:    def runner_on_async_poll(self, host, res, jid, clock):
+./lib/ansible/plugins/callback/__init__.py:    def runner_on_async_ok(self, host, res, jid):
+./lib/ansible/plugins/callback/__init__.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/__init__.py:    def v2_runner_on_async_poll(self, result):
+./lib/ansible/plugins/callback/__init__.py:        self.runner_on_async_poll(host, result._result, jid, clock)
+./lib/ansible/plugins/callback/__init__.py:    def v2_runner_on_async_ok(self, result):
+./lib/ansible/plugins/callback/__init__.py:        self.runner_on_async_ok(host, result._result, jid)
+./lib/ansible/plugins/callback/__init__.py:    def v2_runner_on_async_failed(self, result):
+./lib/ansible/plugins/callback/__init__.py:        self.runner_on_async_failed(host, result._result, jid)
+./lib/ansible/plugins/callback/foreman.py:    def v2_runner_on_async_ok(self, result, jid):
+./lib/ansible/plugins/callback/foreman.py:    def v2_runner_on_async_failed(self, result, jid):
+./lib/ansible/plugins/callback/log_plays.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/logentries.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/logstash.py:    def v2_runner_on_async_failed(self, result, **kwargs):
+./lib/ansible/plugins/callback/logstash.py:        self.logger.error("ansible async", extra=data)
+./lib/ansible/plugins/callback/mail.py:    def v2_runner_on_async_failed(self, result):
+./lib/ansible/plugins/callback/osx_say.py:    def runner_on_async_ok(self, host, res, jid):
+./lib/ansible/plugins/callback/osx_say.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/syslog_json.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/connection/__init__.py:    has_native_async = False  # eg, winrm
+./lib/ansible/plugins/connection/winrm.py:        self.has_native_async = True
+./lib/ansible/plugins/shell/powershell.py:async_wrapper = br'''
+./lib/ansible/plugins/shell/powershell.py:# return asyncresult to controller
+./lib/ansible/plugins/shell/powershell.py:    $jid = $payload.async_jid
+./lib/ansible/plugins/shell/powershell.py:    $results_path = [System.IO.Path]::Combine($env:LOCALAPPDATA, ".ansible_async", $local_jid)
+./lib/ansible/plugins/shell/powershell.py:    $payload.async_results_path = $results_path
+./lib/ansible/plugins/shell/powershell.py:        ansible_async_watchdog_pid=$watchdog_pid
+./lib/ansible/plugins/shell/powershell.py:'''  # end async_wrapper
+./lib/ansible/plugins/shell/powershell.py:async_watchdog = br'''
+./lib/ansible/plugins/shell/powershell.py:    $resultfile_path = $payload.async_results_path
+./lib/ansible/plugins/shell/powershell.py:    $max_exec_time_sec = $payload.async_timeout_sec
+./lib/ansible/plugins/shell/powershell.py:    $job_asyncresult = $job.BeginInvoke()
+./lib/ansible/plugins/shell/powershell.py:    $signaled = $job_asyncresult.AsyncWaitHandle.WaitOne($max_exec_time_sec * 1000)
+./lib/ansible/plugins/shell/powershell.py:    If($job_asyncresult.IsCompleted) {
+./lib/ansible/plugins/shell/powershell.py:        $job_output = $job.EndInvoke($job_asyncresult)
+./lib/ansible/plugins/shell/powershell.py:'''  # end async_watchdog
+./lib/ansible/utils/plugin_docs.py:    'MODULE': frozenset(('async_wrapper',)),
+./test/integration/targets/async/tasks/main.yml:# test code for the async keyword
+./test/integration/targets/async/tasks/main.yml:  async: 10
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:- debug: var=async_result
+./test/integration/targets/async/tasks/main.yml:- name: validate async returns
+./test/integration/targets/async/tasks/main.yml:        - "'ansible_job_id' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'changed' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'cmd' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'delta' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'end' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'finished' in async_result or async_result.finished == 1"
+./test/integration/targets/async/tasks/main.yml:        - "'rc' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'start' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'stderr' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'stdout' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'stdout_lines' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "async_result.rc == 0"
+./test/integration/targets/async/tasks/main.yml:- name: test async without polling
+./test/integration/targets/async/tasks/main.yml:  async: 30
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:- debug: var=async_result
+./test/integration/targets/async/tasks/main.yml:- name: validate async without polling returns
+./test/integration/targets/async/tasks/main.yml:        - "'ansible_job_id' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'started' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'finished' not in async_result or async_result.finished == 0"
+./test/integration/targets/async/tasks/main.yml:  async: 15
+./test/integration/targets/async/tasks/main.yml:# test async "fire and forget, but check later"
+./test/integration/targets/async/tasks/main.yml:  async: 30
+./test/integration/targets/async/tasks/main.yml:  async_status: jid={{ fnf_task.ansible_job_id }}
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 30
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result | changed == false
+./test/integration/targets/async/tasks/main.yml:    - async_result | failed
+./test/integration/targets/async/tasks/main.yml:    - async_result.msg == 'failed gracefully'
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 5
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result.changed == false
+./test/integration/targets/async/tasks/main.yml:    - async_result | failed == true
+./test/integration/targets/async/tasks/main.yml:    - async_result.stderr is search('failing via exception', multiline=True)
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 5
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result.changed == true
+./test/integration/targets/async/tasks/main.yml:    - async_result | success
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 5
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result.changed == true
+./test/integration/targets/async/tasks/main.yml:    - async_result | success
+./test/integration/targets/async/tasks/main.yml:    - async_result.warnings[0] is search('trailing junk after module output')
+./test/integration/targets/async/aliases:async_status
+./test/integration/targets/async/aliases:async_wrapper
+./test/integration/targets/async_extra_data/runme.sh:# Verify that extra data before module JSON output during async call is ignored.
+./test/integration/targets/async_extra_data/runme.sh:ANSIBLE_DEBUG=0 LC_ALL=bogus ansible-playbook test_async.yml -i localhost, -e ansible_connection=ssh -v "$@"
+./test/integration/targets/async_extra_data/runme.sh:ANSIBLE_DEBUG=1 LC_ALL=bogus ansible-playbook test_async.yml -i localhost, -e ansible_connection=ssh -v "$@" \
+./test/integration/targets/async_extra_data/test_async.yml:  - name: async ping with invalid locale via ssh
+./test/integration/targets/async_extra_data/test_async.yml:    async: 10
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  async: 10
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  register: async_hello_world
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:      - 'async_hello_world.msg == "Hello, World!"'
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  when: not async_hello_world|skipped
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  async: 10
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  register: async_hello_ansible
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:      - 'async_hello_ansible.msg == "Hello, Ansible!"'
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  when: not async_hello_ansible|skipped
+./test/integration/targets/handlers/roles/test_handlers/tasks/main.yml:# test code for the async keyword
+./test/integration/targets/handlers/roles/test_handlers_meta/tasks/main.yml:# test code for the async keyword
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_3
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 3
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_3.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_3
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 3
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_3.ansible_job_id }}
+./test/integration/targets/fortios_address/files/default_config.conf:          set url "^(\\/images|\\/videos)?(\\/search|\\/async|\\/asyncv2)\\?"
+./test/integration/targets/fortios_address/files/default_config.conf.backup:          set url "^(\\/images|\\/videos)?(\\/search|\\/async|\\/asyncv2)\\?"
+./test/integration/targets/fortios_ipv4_policy/files/default_config.conf:          set url "^(\\/images|\\/videos)?(\\/search|\\/async|\\/asyncv2)\\?"
+./test/integration/targets/no_log/no_log_local.yml:    - name: async task args should suppressed with no_log
+./test/integration/targets/no_log/no_log_local.yml:      async: 10
+./test/integration/targets/script/tasks/main.yml:# async
+./test/integration/targets/script/tasks/main.yml:- name: test task failure with async param
+./test/integration/targets/script/tasks/main.yml:  async: 2
+./test/integration/targets/script/tasks/main.yml:- name: assert task with async param failed
+./test/integration/targets/script/tasks/main.yml:      - script_result3.msg == "async is not supported for this task."
+./test/integration/targets/uri/tasks/main.yml:  async: 120 # this test set can take ~1m to run on FreeBSD (via Shippable)
+./test/integration/targets/wait_for/tasks/main.yml:  async: 20
+./test/integration/targets/wait_for/tasks/main.yml:  async: 20
+./test/integration/targets/wait_for/tasks/main.yml:  async: 20
+./test/integration/targets/wait_for/tasks/main.yml:  async: 120 # this test set can take ~1m to run on FreeBSD (via Shippable)
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async fire and forget
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 20
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.started == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 0
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.results_file is search('\.ansible_async.+\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:     # ensure that async is actually async- this test will fail if # hosts > forks or if the target host is VERY slow
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll immediate success
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 10
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_async_watchdog_pid is number
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#    - asyncresult.module_tempdir is search('ansible-tmp-')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.module_pid is number
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Get-Process | Where { $_.Id -in ({{ asyncresult.ansible_async_watchdog_pid }}, {{ asyncresult.module_pid }}) }
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Test-Path {{ asyncresult.module_tempdir }}
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll retry
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 10
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#    - asyncresult.module_tempdir is search('ansible-tmp-')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.module_pid is number
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Get-Process | Where { $_.Id -in ({{ asyncresult.ansible_async_watchdog_pid }}, {{ asyncresult.module_pid }}) }
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Test-Path {{ asyncresult.module_tempdir }}
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll timeout
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 3
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == false
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult | failed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.msg is search('timed out')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll graceful module failure
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 5
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult | failed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.msg == 'failed gracefully'
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll exception module failure
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 5
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == false
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult | failed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#    - asyncresult.msg is search('failing via exception')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#- name: loop async success
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  async: 10
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  register: async_many
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  async_status:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  register: asyncout
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  until: asyncout.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  with_items: "{{ async_many.results | map(attribute='ansible_job_id') | list }}"
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  with_items: "{{ asyncout.results }}"
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Get-Process | Where { $_.Id -in ({{ asyncout.results | join(',', attribute='ansible_async_watchdog_pid') }}, {{ asyncout.results | join(',', attribute='module_pid') }}) }
+./test/integration/targets/win_async_wrapper/aliases:async_status
+./test/integration/targets/yum_repository/tasks/yum_repository_centos.yml:    async: no
+./test/integration/targets/yum_repository/tasks/yum_repository_centos.yml:      - "'async = 0' in repofile"
+./test/integration/targets/yum_repository/tasks/yum_repository_centos.yml:    async: no
+./test/integration/targets/yum_repository/tasks/yum_repository_fedora.yml:    async: no
+./test/integration/targets/yum_repository/tasks/yum_repository_fedora.yml:      - "'async = 0' in repofile"
+./test/integration/targets/yum_repository/tasks/yum_repository_fedora.yml:    async: no
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/prepare_nuage_tests/tasks/main.yml:  async: 10
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to remove file after a timeout
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to create file after a timeout
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to populate file contents
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to clear file contents
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to start web server
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/roles/test_ec2_asg/tasks/main.yml:  async: 300
+./test/integration/roles/test_ec2_asg/tasks/main.yml:  async: 300
+./test/integration/roles/test_ec2_asg/tasks/main.yml:  async: 300
+./test/sanity/ansible-doc/skip.txt:async_wrapper
+./test/sanity/validate-modules/main.py:        'async_status.ps1',
+./test/sanity/validate-modules/skip.txt:lib/ansible/modules/utilities/logic/async_status.py
+./test/units/executor/test_task_executor.py:        # mock_task.async cannot be left unset, because on Python 3 MagicMock()
+./test/units/executor/test_task_executor.py:        mock_task.async = 1
+./test/units/executor/test_task_executor.py:    def test_task_executor_poll_async_result(self):
+./test/units/executor/test_task_executor.py:        mock_task.async = 0.1
+./test/units/executor/test_task_executor.py:        # testing with some bad values in the result passed to poll async,
+./test/units/executor/test_task_executor.py:            res = te._poll_async_result(result=dict(), templar=mock_templar)
+./test/units/executor/test_task_executor.py:            res = te._poll_async_result(result=dict(ansible_job_id=1), templar=mock_templar)
+./test/units/executor/test_task_executor.py:            res = te._poll_async_result(result=dict(ansible_job_id=1), templar=mock_templar)
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprises_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprises_get_first(self, filter=None, order_by=None, group_by=[], query_parameters=None, commit=False, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_delete(self, response_choice=1, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_save(self, response_choice=None, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_create_child(self, nurest_object, response_choice=None, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def me_create_child(self, nurest_object, response_choice=None, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def user_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def user_save(self, response_choice=None, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def groups_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_assign(self, objects, nurest_object_type, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def job_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprises_failed_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:                                         async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_assign(self, objects, nurest_object_type, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_assign(self, objects, nurest_object_type, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def me_create_child(self, nurest_object, response_choice=None, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_save(self, response_choice=None, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_delete(self, response_choice=1, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def job_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get_first(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get_first(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/playbook/test_play_context.py:                             async_opts=True, connect_opts=True,
+./test/units/plugins/action/test_action.py:        mock_task.async = None
+./test/units/plugins/action/test_action.py:        mock_task.async = 0
+./test/units/plugins/action/test_action.py:        mock_task.async = 0
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_synchronize.py:    async = None
+./CHANGELOG.md:* restructured how async works to allow it to apply to action plugins that choose to support it.
+./CHANGELOG.md:* 'service' tasks can now use async again, we had lost this capability when changed into an action plugin.
+./CHANGELOG.md:* Fixed Windows async to avoid blocking due to handle inheritance.
+./CHANGELOG.md:* Windows `async:` support for long-running or background tasks.
+./CHANGELOG.md:  * `async:` support for long-running or background tasks.
+./CHANGELOG.md:* Fixed a bug which could occur when the result of an async task did not parse as valid JSON.
+./CHANGELOG.md:* Fix a bug with async's poll keyword not making use of ansible_python_interpreter to run (and thus breaking when /usr/bin/python is not present on the remote machine.)
+./CHANGELOG.md:* async jobs started in "fire & forget" mode can now be checked on at a later time.
+./CHANGELOG.md:* Complex arguments now can be used with async tasks
+./CHANGELOG.md:* miscellaneous fixes/upgrades to async polling logic.
+./CHANGELOG.md:* Added keepalive packets, so async mode is no longer required for long-running tasks.
+./CHANGELOG.md:* async mode no longer allows with_* lookup plugins due to incompatibilities
+./CHANGELOG.md:* fixes to callbacks WRT async output (fire and forget tasks now trigger callbacks!)
+./CHANGELOG.md:* when trying to async a module that is not a 'normal' asyncable module, ansible will now let you know
+./CHANGELOG.md:* async handling improvements
+./ansible-core-sitemap.xml:		<loc>http://docs.ansible.com/ansible/playbooks_async.html</loc>
+./ansible-core-sitemap.xml:		<loc>http://docs.ansible.com/ansible/async_status_module.html</loc>
+Binary file ./.git/objects/pack/pack-48e5c6267c5551f32025bc767a0b09875bd359cc.pack matches
+Binary file ./.git/index matches
+./.github/BOTMETA.yml:  $modules/utilities/logic/async_status.py: $team_ansible
+./.github/BOTMETA.yml:  $modules/utilities/logic/async_wrapper.py: $team_ansible
+./.github/BOTMETA.yml:  $modules/windows/async_status.ps1: $team_windows
+./.github/BOTMETA.yml:  $modules/windows/async_wrapper.ps1: $team_windows
+./docs/docsite/_static/jquery.js:(function(A,w){function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j);return a}return i?
+./docs/docsite/_static/jquery.js:global:true,type:"GET",contentType:"application/x-www-form-urlencoded",processData:true,async:true,xhr:A.XMLHttpRequest&&(A.location.protocol!=="file:"||!A.ActiveXObject)?function(){return new A.XMLHttpRequest}:function(){try{return new A.ActiveXObject("Microsoft.XMLHTTP")}catch(a){}},accepts:{xml:"application/xml, text/xml",html:"text/html",script:"text/javascript, application/javascript",json:"application/json, text/javascript",text:"text/plain",_default:"*/*"}},lastModified:{},etag:{},ajax:function(a){function b(){e.success&&
+./docs/docsite/_static/jquery.js:false;C.onload=C.onreadystatechange=function(){if(!B&&(!this.readyState||this.readyState==="loaded"||this.readyState==="complete")){B=true;b();d();C.onload=C.onreadystatechange=null;z&&C.parentNode&&z.removeChild(C)}}}z.insertBefore(C,z.firstChild);return w}var E=false,x=e.xhr();if(x){e.username?x.open(n,e.url,e.async,e.username,e.password):x.open(n,e.url,e.async);try{if(e.data||a&&a.contentType)x.setRequestHeader("Content-Type",e.contentType);if(e.ifModified){c.lastModified[e.url]&&x.setRequestHeader("If-Modified-Since",
+./docs/docsite/_static/jquery.js:d();E=true;if(x)x.onreadystatechange=c.noop}else if(!E&&x&&(x.readyState===4||q==="timeout")){E=true;x.onreadystatechange=c.noop;i=q==="timeout"?"timeout":!c.httpSuccess(x)?"error":e.ifModified&&c.httpNotModified(x,e.url)?"notmodified":"success";var p;if(i==="success")try{o=c.httpData(x,e.dataType,e)}catch(v){i="parsererror";p=v}if(i==="success"||i==="notmodified")j||b();else c.handleError(e,x,i,p);d();q==="timeout"&&x.abort();if(e.async)x=null}};try{var h=x.abort;x.abort=function(){x&&h.call(x);
+./docs/docsite/_static/jquery.js:g("abort")}}catch(l){}e.async&&e.timeout>0&&setTimeout(function(){x&&!E&&g("timeout")},e.timeout);try{x.send(n==="POST"||n==="PUT"||n==="DELETE"?e.data:null)}catch(m){c.handleError(e,x,null,m);d()}e.async||g();return x}},handleError:function(a,b,d,f){if(a.error)a.error.call(a.context||a,b,d,f);if(a.global)(a.context?c(a.context):c.event).trigger("ajaxError",[b,a,f])},active:0,httpSuccess:function(a){try{return!a.status&&location.protocol==="file:"||a.status>=200&&a.status<300||a.status===304||a.status===
+./docs/docsite/rst/dev_guide/style_guide/_themes/srtd/layout.html:  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSB293');</script>
+./docs/docsite/rst/dev_guide/style_guide/_themes/srtd/searchbox.html:    gcse.async = true;
+./docs/docsite/rst/dev_guide/developing_api.rst:If you are looking to use Ansible programmatically from something other than Python, trigger events asynchronously, 
+./docs/docsite/rst/dev_guide/developing_program_flow_modules.rst:    When :term:`tasks <tasks>` are run with the ``async:`` parameter, Ansible
+./docs/docsite/rst/dev_guide/developing_program_flow_modules.rst:    uses the ``async`` Action Plugin instead of the ``normal`` Action Plugin
+./docs/docsite/rst/community.rst:to get the attention of core developers since it's asynchronous.
+./docs/docsite/rst/glossary.rst:        task in async mode.  Async modes can poll for completion every so many
+./docs/docsite/rst/intro_adhoc.rst:asynchronously in the background, with a timeout of 3600 seconds (``-B``), 
+./docs/docsite/rst/intro_adhoc.rst:async_status module, passing it the job id that was returned when you ran
+./docs/docsite/rst/intro_adhoc.rst:    $ ansible web1.example.com -m async_status -a "jid=488359678239.2844"
+./docs/docsite/rst/intro_configuration.rst:For asynchronous tasks in Ansible (covered in :doc:`playbooks_async`), this is how often to check back on the status of those
+./docs/docsite/rst/intro_windows.rst:* async_status
+./docs/docsite/rst/playbooks_async.rst:You will also want to use asynchronous mode on very long running
+./docs/docsite/rst/playbooks_async.rst:To launch a task asynchronously, specify its maximum runtime
+./docs/docsite/rst/playbooks_async.rst:        async: 45
+./docs/docsite/rst/playbooks_async.rst:   There is no default for the async time limit.  If you leave off the
+./docs/docsite/rst/playbooks_async.rst:   'async' keyword, the task runs synchronously, which is Ansible's
+./docs/docsite/rst/playbooks_async.rst:        async: 45
+./docs/docsite/rst/playbooks_async.rst:   Using a higher value for ``--forks`` will result in kicking off asynchronous
+./docs/docsite/rst/playbooks_async.rst:        async: 1000
+./docs/docsite/rst/playbooks_async.rst:        async_status: jid={{ yum_sleeper.ansible_job_id }}
+./docs/docsite/rst/playbooks_async.rst:   If the value of ``async:`` is not high enough, this will cause the 
+./docs/docsite/rst/playbooks_async.rst:   the ``async_status:`` is looking for will not have been written or no longer exist 
+./docs/docsite/rst/playbooks_async.rst:If you would like to run multiple asynchronous tasks while limiting the amount
+./docs/docsite/rst/playbooks_async.rst:    - name: Run items asynchronously in batch of two items
+./docs/docsite/rst/playbooks_async.rst:      command: sleep {{ async_item }}
+./docs/docsite/rst/playbooks_async.rst:      async: 45
+./docs/docsite/rst/playbooks_async.rst:        loop_var: "async_item"
+./docs/docsite/rst/playbooks_async.rst:      register: async_results
+./docs/docsite/rst/playbooks_async.rst:      async_status:
+./docs/docsite/rst/playbooks_async.rst:        jid: "{{ async_result_item.ansible_job_id }}"
+./docs/docsite/rst/playbooks_async.rst:      with_items: "{{ async_results.results }}"
+./docs/docsite/rst/playbooks_async.rst:        loop_var: "async_result_item"
+./docs/docsite/rst/playbooks_async.rst:      register: async_poll_results
+./docs/docsite/rst/playbooks_async.rst:      until: async_poll_results.finished
+./docs/docsite/rst/playbooks_intro.rst:synchronously or asynchronously.
+./docs/docsite/rst/playbooks_special_topics.rst:   playbooks_async
+./docs/docsite/rst/porting_guide_2.3.rst:Restructued async to work with action plugins
+./docs/docsite/rst/porting_guide_2.3.rst:In Ansible 2.2 (and possibly earlier) the `async:` keyword could not be used in conjunction with the action plugins such as `service`. This limitation has been removed in Ansible 2.3
+./docs/docsite/rst/porting_guide_2.3.rst:    - name: Install nginx asynchronously
+./docs/docsite/rst/porting_guide_2.3.rst:      async: 45
+./docs/docsite/_themes/srtd/footer.html:  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+./docs/docsite/_themes/srtd/layout.html:  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSB293');</script>
+./docs/docsite/keyword_desc.yml:async: Run a task asyncronouslly if the C(action) supports this.
+./docs/docsite/keyword_desc.yml:poll: Sets the polling interval in seconds for async tasks (default 10s).
+./hacking/metadata-tool.py:NONMODULE_PY_FILES = frozenset(('async_wrapper.py',))
+./hacking/report.py:                if module == 'async_wrapper':
+./lib/ansible/cli/__init__.py:                    async_opts=False, connect_opts=False, subset_opts=False, check_opts=False, inventory_opts=False, epilog=None, fork_opts=False,
+./lib/ansible/cli/__init__.py:        if async_opts:
+./lib/ansible/cli/__init__.py:                              help='run asynchronously, failing after X seconds (default=N/A)')
+./lib/ansible/cli/adhoc.py:            async_opts=True,
+./lib/ansible/cli/adhoc.py:    def _play_ds(self, pattern, async, poll):
+./lib/ansible/cli/adhoc.py:            tasks=[dict(action=dict(module=self.options.module_name, args=parse_kv(self.options.module_args, check_raw=check_raw)), async=async, poll=poll)]
+./lib/ansible/config/base.yml:    - For asynchronous tasks in Ansible (covered in Asynchronous Actions and Polling),
+./lib/ansible/executor/module_common.py:from ansible.plugins.shell.powershell import async_watchdog, async_wrapper, become_wrapper, leaf_exec, exec_wrapper
+./lib/ansible/executor/module_common.py:        # remote_tmpdir and this module executing under async.  So we cannot
+./lib/ansible/executor/module_common.py:def _find_module_utils(module_name, b_module_data, module_path, module_args, task_vars, module_compression, async_timeout, become,
+./lib/ansible/executor/module_common.py:        if async_timeout > 0:
+./lib/ansible/executor/module_common.py:            exec_manifest["actions"].insert(0, 'async_watchdog')
+./lib/ansible/executor/module_common.py:            exec_manifest["async_watchdog"] = to_text(base64.b64encode(to_bytes(async_watchdog)))
+./lib/ansible/executor/module_common.py:            exec_manifest["actions"].insert(0, 'async_wrapper')
+./lib/ansible/executor/module_common.py:            exec_manifest["async_wrapper"] = to_text(base64.b64encode(to_bytes(async_wrapper)))
+./lib/ansible/executor/module_common.py:            exec_manifest["async_jid"] = str(random.randint(0, 999999999999))
+./lib/ansible/executor/module_common.py:            exec_manifest["async_timeout_sec"] = async_timeout
+./lib/ansible/executor/module_common.py:def modify_module(module_name, module_path, module_args, task_vars=dict(), module_compression='ZIP_STORED', async_timeout=0, become=False,
+./lib/ansible/executor/module_common.py:                                                                async_timeout=async_timeout, become=become, become_method=become_method,
+./lib/ansible/executor/task_executor.py:            if self._task.async > 0:
+./lib/ansible/executor/task_executor.py:                    result = self._poll_async_result(result=result, templar=templar, task_vars=vars_copy)
+./lib/ansible/executor/task_executor.py:                    # FIXME callback 'v2_runner_on_async_poll' here
+./lib/ansible/executor/task_executor.py:    def _poll_async_result(self, result, templar, task_vars=None):
+./lib/ansible/executor/task_executor.py:        async_jid = result.get('ansible_job_id')
+./lib/ansible/executor/task_executor.py:        if async_jid is None:
+./lib/ansible/executor/task_executor.py:            return dict(failed=True, msg="No job id was returned by the async task")
+./lib/ansible/executor/task_executor.py:        # Create a new pseudo-task to run the async_status module, and run
+./lib/ansible/executor/task_executor.py:        # async time limit is exceeded.
+./lib/ansible/executor/task_executor.py:        async_task = Task().load(dict(action='async_status jid=%s' % async_jid))
+./lib/ansible/executor/task_executor.py:        # Because this is an async task, the action handler is async. However,
+./lib/ansible/executor/task_executor.py:            task=async_task,
+./lib/ansible/executor/task_executor.py:        time_left = self._task.async
+./lib/ansible/executor/task_executor.py:                async_result = normal_handler.run(task_vars=task_vars)
+./lib/ansible/executor/task_executor.py:                # is associated with a parsing error. The async_runner can
+./lib/ansible/executor/task_executor.py:                if (int(async_result.get('finished', 0)) == 1 or
+./lib/ansible/executor/task_executor.py:                        ('failed' in async_result and async_result.get('_ansible_parsed', False)) or
+./lib/ansible/executor/task_executor.py:                        'skipped' in async_result):
+./lib/ansible/executor/task_executor.py:                display.vvvv("Exception during async poll, retrying... (%s)" % to_text(e))
+./lib/ansible/executor/task_executor.py:        if int(async_result.get('finished', 0)) != 1:
+./lib/ansible/executor/task_executor.py:            if async_result.get('_ansible_parsed'):
+./lib/ansible/executor/task_executor.py:                return dict(failed=True, msg="async task did not complete within the requested time")
+./lib/ansible/executor/task_executor.py:                return dict(failed=True, msg="async task produced unparseable results", async_result=async_result)
+./lib/ansible/executor/task_executor.py:            return async_result
+./lib/ansible/module_utils/json_utils.py:# NB: a copy of this function exists in ../../modules/core/async_wrapper.py. Ensure any
+./lib/ansible/module_utils/lxd.py:        if resp_json['type'] == 'async':
+./lib/ansible/modules/packaging/os/pulp_repo.py:        This is asynchronous but not delayed like a scheduled sync. A state of
+./lib/ansible/modules/packaging/os/pulp_repo.py:      - Wait for asynchronous tasks to complete before returning.
+./lib/ansible/modules/packaging/os/pulp_repo.py:                        msg="Failed to check async task status.",
+./lib/ansible/modules/packaging/os/yum_repository.py:  async:
+./lib/ansible/modules/packaging/os/yum_repository.py:        'async',
+./lib/ansible/modules/packaging/os/yum_repository.py:            async=dict(type='bool'),
+./lib/ansible/modules/utilities/helper/_accelerate.py:# NOTE: this shares a fair amount of code in common with async_wrapper, if async_wrapper were a new module we could move
+./lib/ansible/modules/utilities/logic/async_status.py:module: async_status
+./lib/ansible/modules/utilities/logic/async_status.py:short_description: Obtain status of asynchronous task
+./lib/ansible/modules/utilities/logic/async_status.py:     - This module gets the status of an asynchronous task.
+./lib/ansible/modules/utilities/logic/async_status.py:      - if C(status), obtain the status; if C(cleanup), clean up the async job cache
+./lib/ansible/modules/utilities/logic/async_status.py:        located in C(~/.ansible_async/) for the specified job I(jid).
+./lib/ansible/modules/utilities/logic/async_status.py:    - See also U(http://docs.ansible.com/playbooks_async.html)
+./lib/ansible/modules/utilities/logic/async_status.py:    logdir = os.path.expanduser("~/.ansible_async")
+./lib/ansible/modules/utilities/logic/async_wrapper.py:    # decouple from parent environment (does not chdir / to keep the directory context the same as for non async tasks)
+./lib/ansible/modules/utilities/logic/async_wrapper.py:            "msg": "usage: async_wrapper <jid> <time_limit> <modulescript> <argsfile> [-preserve_tmp]  "
+./lib/ansible/modules/utilities/logic/async_wrapper.py:    jobdir = os.path.expanduser("~/.ansible_async")
+./lib/ansible/modules/utilities/logic/async_wrapper.py:            # Notify the overlord that the async process started
+./lib/ansible/modules/utilities/logic/async_wrapper.py:            notice("Return async_wrapper task started.")
+./lib/ansible/modules/utilities/logic/pause.py:  - The pause module integrates into async/parallelized playbooks without any special considerations (see Rolling Updates).
+./lib/ansible/modules/cloud/amazon/ec2_snapshot_facts.py:    description: Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails (for example, if the proper
+./lib/ansible/modules/cloud/amazon/execute_lambda.py:  - This module executes AWS Lambda functions, allowing synchronous and asynchronous
+./lib/ansible/modules/cloud/amazon/execute_lambda.py:    description: C(StatusCode) of API call exit (200 for synchronous invokes, 202 for async)
+./lib/ansible/modules/cloud/azure/_azure.py:    raise AzureException('Timed out waiting for async operation ' + msg + ' "' + str(promise.request_id) + '" to complete.')
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/_cs_nic.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_account.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_affinitygroup.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_domain.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_firewall.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:            if self.module.params.get('poll_async'):
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:                if self.module.params.get('poll_async'):
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:            if self.module.params.get('poll_async'):
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_instance_nic_secondaryip.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_ip_address.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_iso.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                if network and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                if network and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_network_acl_rule.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_portforward.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                if project and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:            if project and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                if project and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_project.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_router.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_securitygroup_rule.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_staticnat.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_template.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_user.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:                if res and poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                    poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                    if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_volume.py:        poll_async = dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:      - "Poll async jobs until job has finished."
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:            if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpc.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:  poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:      - Poll async jobs until job has finished.
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                poll_async = self.module.params.get('poll_async')
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:                if poll_async:
+./lib/ansible/modules/cloud/cloudstack/cs_vpn_gateway.py:        poll_async=dict(type='bool', default=True),
+./lib/ansible/modules/cloud/google/gce_labels.py:    # method to poll for the async request/operation to complete before
+./lib/ansible/modules/cloud/profitbricks/profitbricks.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_datacenter.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_nic.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_volume.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/cloud/profitbricks/profitbricks_volume_attachments.py:        'Timed out waiting for async operation ' + msg + ' "' + str(
+./lib/ansible/modules/database/misc/riak.py:# Wait for handoffs to finish.  Use with async and poll.
+./lib/ansible/modules/database/misc/riak.py:# this could take a while, recommend to run in async mode
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:    async_ssl:
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:    async_ssl_threads:
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:            - Number of async ssl threads per se_dp.
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:        async_ssl=dict(type='bool',),
+./lib/ansible/modules/network/avi/avi_serviceenginegroup.py:        async_ssl_threads=dict(type='int',),
+./lib/ansible/modules/network/radware/vdirect_file.py:     - Wait for async operation to complete, may be set as VDIRECT_WAIT environment variable.
+./lib/ansible/modules/network/radware/vdirect_file.py:     - Amount of time to wait for async operation completion [seconds],
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                'volume-destroy-async', **{'volume-name': self.name})
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                'volume-rename-async',
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                'volume-size-async',
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                    'volume-online-async',
+./lib/ansible/modules/storage/netapp/na_cdot_volume.py:                    'volume-offline-async',
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            - The name of the async array you wish to target, or create.
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            - A C(state) of present will either create or update the async mirror group.
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            - A C(state) of absent will remove the async mirror group.
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    async_id = None
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors' % ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    for async_group in data:
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:        if async_group['label'] == desired_name:
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            api_data = async_group
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            async_id = async_group['groupRef']
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                syncIntervalMinutes=async_group['syncIntervalMinutes'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                syncWarnThresholdMinutes=async_group['syncCompletionTimeAlertThresholdMinutes'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                recoveryWarnThresholdMinutes=async_group['recoveryPointAgeAlertThresholdMinutes'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                repoUtilizationWarnThreshold=async_group['repositoryUtilizationWarnThreshold'],
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    return label_exists, matches_spec, api_data, async_id
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:def create_async(module, ssid, api_url, api_pwd, api_usr, body):
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors' % ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:def update_async(module, ssid, api_url, pwd, user, body, new_name, async_id):
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors/%s' % (ssid, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:        module.exit_json(msg="Exception while updating async mirror group. Message: %s" % to_native(e),
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:def remove_amg(module, ssid, api_url, pwd, user, async_id):
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    endpoint = 'storage-systems/%s/async-mirrors/%s' % (ssid, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:        module.exit_json(msg="Exception while removing async mirror group. Message: %s" % to_native(e),
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:    name_exists, spec_matches, api_data, async_id = has_match(module, ssid, api_url, pwd, user, p)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            results = update_async(module, ssid, api_url, pwd, user,
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                                   p, new_name, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                             msg="Async mirror group updated", async_id=async_id,
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            results = create_async(module, ssid, api_url, user, pwd, p)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:            remove_amg(module, ssid, api_url, pwd, user, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg.py:                             async_id=async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    - Update a storage array to become the primary or secondary instance in an asynchronous mirror group
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:            - The ID of the primary storage array for the async mirror action
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    get_amgs = 'storage-systems/%s/async-mirrors' % ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    endpoint = 'storage-systems/%s/async-mirrors/%s/role' % (ssid, amg_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    status_endpoint = 'storage-systems/%s/async-mirrors/%s' % (ssid, amg_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:    agm_exists, has_desired_role, async_id, amg_data = has_match(module, ssid, api_url, pwd, user, p, name)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_role.py:        amg_data = update_amg(module, ssid, api_url, user, pwd, p, async_id)
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:short_description: Conduct synchronization actions on asynchronous mirror groups.
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:    - Allows for the initialization, suspension and resumption of an asynchronous mirror group's synchronization for NetApp E-series storage arrays.
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:            - The name of the async mirror group you wish to target
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:    - name: start AMG async
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:        endpoint = self.url + '/storage-systems/%s/async-mirrors' % self.ssid
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:                msg="There is no async mirror group  %s associated with storage array %s" % (self.name, self.ssid))
+./lib/ansible/modules/storage/netapp/netapp_e_amg_sync.py:        endpoint = self.url + "/storage-systems/%s/async-mirrors/%s/%s" % (self.ssid, self.amg_id, suffix)
+./lib/ansible/modules/storage/zfs/zpool_facts.py:                "feature@async_destroy": "enabled",
+./lib/ansible/modules/windows/async_status.ps1:$log_path = [System.IO.Path]::Combine($env:LOCALAPPDATA, ".ansible_async", $jid)
+./lib/ansible/modules/windows/async_wrapper.ps1:                $job_asyncresult = $job.BeginInvoke()
+./lib/ansible/modules/windows/async_wrapper.ps1:                $signaled = $job_asyncresult.AsyncWaitHandle.WaitOne($max_exec_time_sec * 1000)
+./lib/ansible/modules/windows/async_wrapper.ps1:                If($job_asyncresult.IsCompleted) {
+./lib/ansible/modules/windows/async_wrapper.ps1:                    $job_output = $job.EndInvoke($job_asyncresult)
+./lib/ansible/modules/windows/async_wrapper.ps1:$results_path = [System.IO.Path]::Combine($env:LOCALAPPDATA, ".ansible_async", $local_jid)
+./lib/ansible/modules/windows/async_wrapper.ps1:    ansible_async_watchdog_pid=$watchdog_pid
+./lib/ansible/modules/windows/win_disk_image.ps1:        # the actual mount is async, so the CIMInstance result may not immediately contain the data we need
+./lib/ansible/modules/windows/win_domain_controller.py:# becomes invalid to fetch the final output over WinRM. This requires win_async
+./lib/ansible/modules/windows/win_toast.py:   - You must run this module with async, otherwise it will hang until the expire period has passed.
+./lib/ansible/modules/windows/win_toast.py:- name: Warn logged in users of impending upgrade (note use of async to stop the module from waiting until notification expires).
+./lib/ansible/modules/windows/win_toast.py:  async: 60
+./lib/ansible/parsing/vault/__init__.py:        due to wear leveling; for other storage systems, the async kernel->filesystem->disk calls never
+./lib/ansible/playbook/task.py:    _async = FieldAttribute(isa='int', default=0)
+./lib/ansible/plugins/action/__init__.py:        self._supports_async = False
+./lib/ansible/plugins/action/__init__.py:        if self._task.async and not self._supports_async:
+./lib/ansible/plugins/action/__init__.py:            raise AnsibleActionFail('async is not supported for this task.')
+./lib/ansible/plugins/action/__init__.py:        elif self._task.async and self._play_context.check_mode:
+./lib/ansible/plugins/action/__init__.py:            raise AnsibleActionFail('check mode and async cannot be used on same task.')
+./lib/ansible/plugins/action/__init__.py:                                                                    async_timeout=self._task.async, become=self._play_context.become,
+./lib/ansible/plugins/action/__init__.py:    def _is_pipelining_enabled(self, module_style, wrap_async=False):
+./lib/ansible/plugins/action/__init__.py:            not wrap_async,                            # async does not support pipelining
+./lib/ansible/plugins/action/__init__.py:                                      wrap_async=False)
+./lib/ansible/plugins/action/__init__.py:    def _execute_module(self, module_name=None, module_args=None, tmp=None, task_vars=None, persist_files=False, delete_remote_tmp=True, wrap_async=False):
+./lib/ansible/plugins/action/__init__.py:        if not self._is_pipelining_enabled(module_style, wrap_async):
+./lib/ansible/plugins/action/__init__.py:        if wrap_async:
+./lib/ansible/plugins/action/__init__.py:            # configure, upload, and chmod the async_wrapper module
+./lib/ansible/plugins/action/__init__.py:            (async_module_style, shebang, async_module_data, async_module_path) = self._configure_module(module_name='async_wrapper', module_args=dict(),
+./lib/ansible/plugins/action/__init__.py:            async_module_remote_filename = self._connection._shell.get_remote_filename(async_module_path)
+./lib/ansible/plugins/action/__init__.py:            remote_async_module_path = self._connection._shell.join_path(tmp, async_module_remote_filename)
+./lib/ansible/plugins/action/__init__.py:            self._transfer_data(remote_async_module_path, async_module_data)
+./lib/ansible/plugins/action/__init__.py:            remote_files.append(remote_async_module_path)
+./lib/ansible/plugins/action/__init__.py:            async_limit = self._task.async
+./lib/ansible/plugins/action/__init__.py:            async_jid = str(random.randint(0, 999999999999))
+./lib/ansible/plugins/action/__init__.py:            # call the interpreter for async_wrapper directly
+./lib/ansible/plugins/action/__init__.py:            # TODO: re-implement async_wrapper as a regular module to avoid this special case
+./lib/ansible/plugins/action/__init__.py:            async_cmd = [interpreter, remote_async_module_path, async_jid, async_limit, remote_module_path]
+./lib/ansible/plugins/action/__init__.py:                async_cmd.insert(0, environment_string)
+./lib/ansible/plugins/action/__init__.py:                async_cmd.append(args_file_path)
+./lib/ansible/plugins/action/__init__.py:                # maintain a fixed number of positional parameters for async_wrapper
+./lib/ansible/plugins/action/__init__.py:                async_cmd.append('_')
+./lib/ansible/plugins/action/__init__.py:                async_cmd.append("-preserve_tmp")
+./lib/ansible/plugins/action/__init__.py:            cmd = " ".join(to_text(x) for x in async_cmd)
+./lib/ansible/plugins/action/__init__.py:        tmpdir_delete = (not data.pop("_ansible_suppress_tmpdir_delete", False) and wrap_async)
+./lib/ansible/plugins/action/__init__.py:        if wrap_async:
+./lib/ansible/plugins/action/net_base.py:                          wrap_async=self._task.async))
+./lib/ansible/plugins/action/normal.py:        self._supports_async = True
+./lib/ansible/plugins/action/normal.py:            wrap_async = self._task.async and not self._connection.has_native_async
+./lib/ansible/plugins/action/normal.py:            results = merge_hash(results, self._execute_module(tmp=tmp, task_vars=task_vars, wrap_async=wrap_async))
+./lib/ansible/plugins/action/package.py:        self._supports_async = True
+./lib/ansible/plugins/action/package.py:                result.update(self._execute_module(module_name=module, module_args=new_module_args, task_vars=task_vars, wrap_async=self._task.async))
+./lib/ansible/plugins/action/service.py:        self._supports_async = True
+./lib/ansible/plugins/action/service.py:            result.update(self._execute_module(module_name=module, module_args=new_module_args, task_vars=task_vars, wrap_async=self._task.async))
+./lib/ansible/plugins/action/win_reboot.py:        self._supports_async = True
+./lib/ansible/plugins/callback/__init__.py:    def runner_on_async_poll(self, host, res, jid, clock):
+./lib/ansible/plugins/callback/__init__.py:    def runner_on_async_ok(self, host, res, jid):
+./lib/ansible/plugins/callback/__init__.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/__init__.py:    def v2_runner_on_async_poll(self, result):
+./lib/ansible/plugins/callback/__init__.py:        self.runner_on_async_poll(host, result._result, jid, clock)
+./lib/ansible/plugins/callback/__init__.py:    def v2_runner_on_async_ok(self, result):
+./lib/ansible/plugins/callback/__init__.py:        self.runner_on_async_ok(host, result._result, jid)
+./lib/ansible/plugins/callback/__init__.py:    def v2_runner_on_async_failed(self, result):
+./lib/ansible/plugins/callback/__init__.py:        self.runner_on_async_failed(host, result._result, jid)
+./lib/ansible/plugins/callback/foreman.py:    def v2_runner_on_async_ok(self, result, jid):
+./lib/ansible/plugins/callback/foreman.py:    def v2_runner_on_async_failed(self, result, jid):
+./lib/ansible/plugins/callback/log_plays.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/logentries.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/logstash.py:    def v2_runner_on_async_failed(self, result, **kwargs):
+./lib/ansible/plugins/callback/logstash.py:        self.logger.error("ansible async", extra=data)
+./lib/ansible/plugins/callback/mail.py:    def v2_runner_on_async_failed(self, result):
+./lib/ansible/plugins/callback/osx_say.py:    def runner_on_async_ok(self, host, res, jid):
+./lib/ansible/plugins/callback/osx_say.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/callback/syslog_json.py:    def runner_on_async_failed(self, host, res, jid):
+./lib/ansible/plugins/connection/__init__.py:    has_native_async = False  # eg, winrm
+./lib/ansible/plugins/connection/winrm.py:        self.has_native_async = True
+./lib/ansible/plugins/shell/powershell.py:async_wrapper = br'''
+./lib/ansible/plugins/shell/powershell.py:# return asyncresult to controller
+./lib/ansible/plugins/shell/powershell.py:    $jid = $payload.async_jid
+./lib/ansible/plugins/shell/powershell.py:    $results_path = [System.IO.Path]::Combine($env:LOCALAPPDATA, ".ansible_async", $local_jid)
+./lib/ansible/plugins/shell/powershell.py:    $payload.async_results_path = $results_path
+./lib/ansible/plugins/shell/powershell.py:        ansible_async_watchdog_pid=$watchdog_pid
+./lib/ansible/plugins/shell/powershell.py:'''  # end async_wrapper
+./lib/ansible/plugins/shell/powershell.py:async_watchdog = br'''
+./lib/ansible/plugins/shell/powershell.py:    $resultfile_path = $payload.async_results_path
+./lib/ansible/plugins/shell/powershell.py:    $max_exec_time_sec = $payload.async_timeout_sec
+./lib/ansible/plugins/shell/powershell.py:    $job_asyncresult = $job.BeginInvoke()
+./lib/ansible/plugins/shell/powershell.py:    $signaled = $job_asyncresult.AsyncWaitHandle.WaitOne($max_exec_time_sec * 1000)
+./lib/ansible/plugins/shell/powershell.py:    If($job_asyncresult.IsCompleted) {
+./lib/ansible/plugins/shell/powershell.py:        $job_output = $job.EndInvoke($job_asyncresult)
+./lib/ansible/plugins/shell/powershell.py:'''  # end async_watchdog
+./lib/ansible/utils/plugin_docs.py:    'MODULE': frozenset(('async_wrapper',)),
+./test/integration/targets/async/tasks/main.yml:# test code for the async keyword
+./test/integration/targets/async/tasks/main.yml:  async: 10
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:- debug: var=async_result
+./test/integration/targets/async/tasks/main.yml:- name: validate async returns
+./test/integration/targets/async/tasks/main.yml:        - "'ansible_job_id' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'changed' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'cmd' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'delta' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'end' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'finished' in async_result or async_result.finished == 1"
+./test/integration/targets/async/tasks/main.yml:        - "'rc' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'start' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'stderr' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'stdout' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'stdout_lines' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "async_result.rc == 0"
+./test/integration/targets/async/tasks/main.yml:- name: test async without polling
+./test/integration/targets/async/tasks/main.yml:  async: 30
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:- debug: var=async_result
+./test/integration/targets/async/tasks/main.yml:- name: validate async without polling returns
+./test/integration/targets/async/tasks/main.yml:        - "'ansible_job_id' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'started' in async_result"
+./test/integration/targets/async/tasks/main.yml:        - "'finished' not in async_result or async_result.finished == 0"
+./test/integration/targets/async/tasks/main.yml:  async: 15
+./test/integration/targets/async/tasks/main.yml:# test async "fire and forget, but check later"
+./test/integration/targets/async/tasks/main.yml:  async: 30
+./test/integration/targets/async/tasks/main.yml:  async_status: jid={{ fnf_task.ansible_job_id }}
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 30
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result | changed == false
+./test/integration/targets/async/tasks/main.yml:    - async_result | failed
+./test/integration/targets/async/tasks/main.yml:    - async_result.msg == 'failed gracefully'
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 5
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result.changed == false
+./test/integration/targets/async/tasks/main.yml:    - async_result | failed == true
+./test/integration/targets/async/tasks/main.yml:    - async_result.stderr is search('failing via exception', multiline=True)
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 5
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result.changed == true
+./test/integration/targets/async/tasks/main.yml:    - async_result | success
+./test/integration/targets/async/tasks/main.yml:  async_test:
+./test/integration/targets/async/tasks/main.yml:  async: 5
+./test/integration/targets/async/tasks/main.yml:  register: async_result
+./test/integration/targets/async/tasks/main.yml:    - async_result.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/async/tasks/main.yml:    - async_result.finished == 1
+./test/integration/targets/async/tasks/main.yml:    - async_result.changed == true
+./test/integration/targets/async/tasks/main.yml:    - async_result | success
+./test/integration/targets/async/tasks/main.yml:    - async_result.warnings[0] is search('trailing junk after module output')
+./test/integration/targets/async/aliases:async_status
+./test/integration/targets/async/aliases:async_wrapper
+./test/integration/targets/async_extra_data/runme.sh:# Verify that extra data before module JSON output during async call is ignored.
+./test/integration/targets/async_extra_data/runme.sh:ANSIBLE_DEBUG=0 LC_ALL=bogus ansible-playbook test_async.yml -i localhost, -e ansible_connection=ssh -v "$@"
+./test/integration/targets/async_extra_data/runme.sh:ANSIBLE_DEBUG=1 LC_ALL=bogus ansible-playbook test_async.yml -i localhost, -e ansible_connection=ssh -v "$@" \
+./test/integration/targets/async_extra_data/test_async.yml:  - name: async ping with invalid locale via ssh
+./test/integration/targets/async_extra_data/test_async.yml:    async: 10
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  async: 10
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  register: async_hello_world
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:      - 'async_hello_world.msg == "Hello, World!"'
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  when: not async_hello_world|skipped
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  async: 10
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  register: async_hello_ansible
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:      - 'async_hello_ansible.msg == "Hello, Ansible!"'
+./test/integration/targets/binary_modules/roles/test_binary_modules/tasks/main.yml:  when: not async_hello_ansible|skipped
+./test/integration/targets/handlers/roles/test_handlers/tasks/main.yml:# test code for the async keyword
+./test/integration/targets/handlers/roles/test_handlers_meta/tasks/main.yml:# test code for the async keyword
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_3
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 3
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_3.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async: 1000
+./test/integration/targets/aws_lambda/tasks/main.yml:      register: async_3
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 1
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 2
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_1.ansible_job_id }}
+./test/integration/targets/aws_lambda/tasks/main.yml:    - name: wait for async job 3
+./test/integration/targets/aws_lambda/tasks/main.yml:      async_status: jid={{ async_3.ansible_job_id }}
+./test/integration/targets/fortios_address/files/default_config.conf:          set url "^(\\/images|\\/videos)?(\\/search|\\/async|\\/asyncv2)\\?"
+./test/integration/targets/fortios_address/files/default_config.conf.backup:          set url "^(\\/images|\\/videos)?(\\/search|\\/async|\\/asyncv2)\\?"
+./test/integration/targets/fortios_ipv4_policy/files/default_config.conf:          set url "^(\\/images|\\/videos)?(\\/search|\\/async|\\/asyncv2)\\?"
+./test/integration/targets/no_log/no_log_local.yml:    - name: async task args should suppressed with no_log
+./test/integration/targets/no_log/no_log_local.yml:      async: 10
+./test/integration/targets/script/tasks/main.yml:# async
+./test/integration/targets/script/tasks/main.yml:- name: test task failure with async param
+./test/integration/targets/script/tasks/main.yml:  async: 2
+./test/integration/targets/script/tasks/main.yml:- name: assert task with async param failed
+./test/integration/targets/script/tasks/main.yml:      - script_result3.msg == "async is not supported for this task."
+./test/integration/targets/uri/tasks/main.yml:  async: 120 # this test set can take ~1m to run on FreeBSD (via Shippable)
+./test/integration/targets/wait_for/tasks/main.yml:  async: 20
+./test/integration/targets/wait_for/tasks/main.yml:  async: 20
+./test/integration/targets/wait_for/tasks/main.yml:  async: 20
+./test/integration/targets/wait_for/tasks/main.yml:  async: 120 # this test set can take ~1m to run on FreeBSD (via Shippable)
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async fire and forget
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 20
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.started == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 0
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.results_file is search('\.ansible_async.+\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:     # ensure that async is actually async- this test will fail if # hosts > forks or if the target host is VERY slow
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll immediate success
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 10
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_async_watchdog_pid is number
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#    - asyncresult.module_tempdir is search('ansible-tmp-')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.module_pid is number
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Get-Process | Where { $_.Id -in ({{ asyncresult.ansible_async_watchdog_pid }}, {{ asyncresult.module_pid }}) }
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Test-Path {{ asyncresult.module_tempdir }}
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll retry
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 10
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#    - asyncresult.module_tempdir is search('ansible-tmp-')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.module_pid is number
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Get-Process | Where { $_.Id -in ({{ asyncresult.ansible_async_watchdog_pid }}, {{ asyncresult.module_pid }}) }
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Test-Path {{ asyncresult.module_tempdir }}
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll timeout
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 3
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == false
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult | failed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.msg is search('timed out')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll graceful module failure
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 5
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult | failed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.msg == 'failed gracefully'
+./test/integration/targets/win_async_wrapper/tasks/main.yml:- name: async poll exception module failure
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  async: 5
+./test/integration/targets/win_async_wrapper/tasks/main.yml:  register: asyncresult
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.ansible_job_id is match('\d+\.\d+')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult.changed == false
+./test/integration/targets/win_async_wrapper/tasks/main.yml:    - asyncresult | failed == true
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#    - asyncresult.msg is search('failing via exception')
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#- name: loop async success
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  async_test:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  async: 10
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  register: async_many
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  async_status:
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  register: asyncout
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  until: asyncout.finished == 1
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  with_items: "{{ async_many.results | map(attribute='ansible_job_id') | list }}"
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  with_items: "{{ asyncout.results }}"
+./test/integration/targets/win_async_wrapper/tasks/main.yml:#  raw: Get-Process | Where { $_.Id -in ({{ asyncout.results | join(',', attribute='ansible_async_watchdog_pid') }}, {{ asyncout.results | join(',', attribute='module_pid') }}) }
+./test/integration/targets/win_async_wrapper/aliases:async_status
+./test/integration/targets/yum_repository/tasks/yum_repository_centos.yml:    async: no
+./test/integration/targets/yum_repository/tasks/yum_repository_centos.yml:      - "'async = 0' in repofile"
+./test/integration/targets/yum_repository/tasks/yum_repository_centos.yml:    async: no
+./test/integration/targets/yum_repository/tasks/yum_repository_fedora.yml:    async: no
+./test/integration/targets/yum_repository/tasks/yum_repository_fedora.yml:      - "'async = 0' in repofile"
+./test/integration/targets/yum_repository/tasks/yum_repository_fedora.yml:    async: no
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_overlay_global/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/cleanup.yaml:- name: Previous command is asynchronous can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/nxos_vxlan_vtep/tasks/platform/n7k/setup.yaml:- name: Previous command is asynchronous and can take a while.  Allow time for it to complete
+./test/integration/targets/prepare_nuage_tests/tasks/main.yml:  async: 10
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to remove file after a timeout
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to create file after a timeout
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to populate file contents
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to clear file contents
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:- name: run async task to start web server
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/targets/win_wait_for/tasks/main.yml:  async: 30
+./test/integration/roles/test_ec2_asg/tasks/main.yml:  async: 300
+./test/integration/roles/test_ec2_asg/tasks/main.yml:  async: 300
+./test/integration/roles/test_ec2_asg/tasks/main.yml:  async: 300
+./test/sanity/ansible-doc/skip.txt:async_wrapper
+./test/sanity/validate-modules/main.py:        'async_status.ps1',
+./test/sanity/validate-modules/skip.txt:lib/ansible/modules/utilities/logic/async_status.py
+./test/units/executor/test_task_executor.py:        # mock_task.async cannot be left unset, because on Python 3 MagicMock()
+./test/units/executor/test_task_executor.py:        mock_task.async = 1
+./test/units/executor/test_task_executor.py:    def test_task_executor_poll_async_result(self):
+./test/units/executor/test_task_executor.py:        mock_task.async = 0.1
+./test/units/executor/test_task_executor.py:        # testing with some bad values in the result passed to poll async,
+./test/units/executor/test_task_executor.py:            res = te._poll_async_result(result=dict(), templar=mock_templar)
+./test/units/executor/test_task_executor.py:            res = te._poll_async_result(result=dict(ansible_job_id=1), templar=mock_templar)
+./test/units/executor/test_task_executor.py:            res = te._poll_async_result(result=dict(ansible_job_id=1), templar=mock_templar)
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprises_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprises_get_first(self, filter=None, order_by=None, group_by=[], query_parameters=None, commit=False, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_delete(self, response_choice=1, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_save(self, response_choice=None, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_create_child(self, nurest_object, response_choice=None, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def me_create_child(self, nurest_object, response_choice=None, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def user_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def user_save(self, response_choice=None, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def groups_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_assign(self, objects, nurest_object_type, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def job_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprises_failed_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:                                         async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_failed_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_assign(self, objects, nurest_object_type, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def group_assign(self, objects, nurest_object_type, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def me_create_child(self, nurest_object, response_choice=None, async=False, callback=None, commit=True):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_save(self, response_choice=None, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def enterprise_delete(self, response_choice=1, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def job_fetch(self, async=False, callback=None):
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get_first(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/modules/network/nuage/test_nuage_vspk.py:        def users_get_first(self, filter=None, order_by=None, group_by=[], page=None, page_size=None, query_parameters=None, commit=True, async=False,
+./test/units/playbook/test_play_context.py:                             async_opts=True, connect_opts=True,
+./test/units/plugins/action/test_action.py:        mock_task.async = None
+./test/units/plugins/action/test_action.py:        mock_task.async = 0
+./test/units/plugins/action/test_action.py:        mock_task.async = 0
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_raw.py:        task.async = False
+./test/units/plugins/action/test_synchronize.py:    async = None
+./CHANGELOG.md:* restructured how async works to allow it to apply to action plugins that choose to support it.
+./CHANGELOG.md:* 'service' tasks can now use async again, we had lost this capability when changed into an action plugin.
+./CHANGELOG.md:* Fixed Windows async to avoid blocking due to handle inheritance.
+./CHANGELOG.md:* Windows `async:` support for long-running or background tasks.
+./CHANGELOG.md:  * `async:` support for long-running or background tasks.
+./CHANGELOG.md:* Fixed a bug which could occur when the result of an async task did not parse as valid JSON.
+./CHANGELOG.md:* Fix a bug with async's poll keyword not making use of ansible_python_interpreter to run (and thus breaking when /usr/bin/python is not present on the remote machine.)
+./CHANGELOG.md:* async jobs started in "fire & forget" mode can now be checked on at a later time.
+./CHANGELOG.md:* Complex arguments now can be used with async tasks
+./CHANGELOG.md:* miscellaneous fixes/upgrades to async polling logic.
+./CHANGELOG.md:* Added keepalive packets, so async mode is no longer required for long-running tasks.
+./CHANGELOG.md:* async mode no longer allows with_* lookup plugins due to incompatibilities
+./CHANGELOG.md:* fixes to callbacks WRT async output (fire and forget tasks now trigger callbacks!)
+./CHANGELOG.md:* when trying to async a module that is not a 'normal' asyncable module, ansible will now let you know
+./CHANGELOG.md:* async handling improvements
+./ansible-core-sitemap.xml:		<loc>http://docs.ansible.com/ansible/playbooks_async.html</loc>
+./ansible-core-sitemap.xml:		<loc>http://docs.ansible.com/ansible/async_status_module.html</loc>
