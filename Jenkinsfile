@@ -18,7 +18,7 @@ mvn clean package'''
 
     stage('build artifacts') {
       steps {
-        archiveArtifacts(allowEmptyArchive: true, artifacts: 'target/helloworld-1.0.jar', fingerprint: true)
+        archiveArtifacts(allowEmptyArchive: true, artifacts: 'helloworld-1.0.jar', fingerprint: true)
       }
     }
 
