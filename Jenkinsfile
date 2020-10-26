@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build the artficats') {
       steps {
-        archiveArtifacts(allowEmptyArchive: true, fingerprint: true, artifacts: 'target/*.txt')
+        archiveArtifacts(allowEmptyArchive: true, fingerprint: true, artifacts: '*.txt')
       }
     }
 
