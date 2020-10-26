@@ -46,7 +46,7 @@ pipeline {
         stage('Deployment') {
           steps {
             echo 'Deployment on Windows'
-            emailext(subject: 'Deployment on production', body: 'Your approval is required to deploy on production', from: 'kashifmehmood_1991@yahoo.com', to: 'kashifmehmood_1991@yahoo.com', replyTo: 'kashifmehmood_1991@yahoo.com')
+            sh 'echo $GIT_COMMIT'
           }
         }
 
