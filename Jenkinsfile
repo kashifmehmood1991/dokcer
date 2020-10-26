@@ -23,8 +23,10 @@ mvn clean package'''
     }
 
     stage('Deployment') {
+      agent any
       steps {
         input(message: 'Do you want to proceed for deployment', id: 'deployment', ok: 'yes')
+        echo 'Deployment is successfull'
       }
     }
 
