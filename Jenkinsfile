@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('build the artficats') {
       steps {
-        archiveArtifacts(allowEmptyArchive: true, fingerprint: true, artifacts: '*.txt')
+        archiveArtifacts(allowEmptyArchive: true, fingerprint: true, artifacts: 'target/*.txt')
       }
     }
 
