@@ -5,7 +5,10 @@ pipeline {
       parallel {
         stage('BuildA') {
           when {
-            branch 'master'
+            not {
+              branch 'multibranchtesting'
+            }
+
           }
           steps {
             echo 'This is jdk8 build'
