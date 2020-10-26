@@ -11,7 +11,8 @@ cd helloworld-master'''
 
     stage('build step') {
       steps {
-        sh 'mvn clean package'
+        sh '''cd helloworld-master
+mvn clean package'''
       }
     }
 
