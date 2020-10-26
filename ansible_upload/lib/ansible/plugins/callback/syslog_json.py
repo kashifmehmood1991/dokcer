@@ -17,7 +17,7 @@ DOCUMENTATION = '''
       - Before 2.4 only environment variables were available for configuration
     options:
       server:
-        description: syslog server that will recieve the event
+        description: syslog server that will receive the event
         env:
         - name: SYSLOG_SERVER
         default: localhost
