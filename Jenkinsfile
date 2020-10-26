@@ -44,6 +44,7 @@ pipeline {
     stage('Deployment') {
       parallel {
         stage('Deployment') {
+          agent any
           steps {
             echo 'Deployment on Windows'
             sh 'echo $GIT_COMMIT'
